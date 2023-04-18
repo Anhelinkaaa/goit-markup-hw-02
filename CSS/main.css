@@ -6,8 +6,8 @@
 }
 
 .body {
-  font-family: 'Roboto' sans-serif;
-  color: var(--main-color);
+  font-family:"Roboto",sans-serif;
+  color:#434455;
   background-color: white;
 }
 
