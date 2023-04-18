@@ -5,7 +5,7 @@
   --acent-color: rgba(77, 90, 229, 1);
 }
 
-.body {
+body {
   font-family:"Roboto",sans-serif;
   color:#434455;
   background-color: white;
