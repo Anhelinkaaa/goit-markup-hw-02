@@ -1,0 +1,138 @@
+:root {
+    --main-color:rgba(46, 47, 66, 1);
+    --second-color:rgba(67, 68, 85, 1);
+    --third-color:rgba(244, 244, 253, 1);
+    --acent-color:rgba(77, 90, 229, 1);
+}
+
+.body {
+font-family: 'Roboto' sans-serif;
+color:var(--main-color);
+background-color: white;
+}
+
+/* -- Navigation -- */
+.link {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--main-color);
+}
+
+ .logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--main-color);
+ }
+ .logo:hover,
+ .logo:focus {
+    color: rgba(64, 75, 191, 1);
+ }
+
+ .logo-part {
+    color: var(--acent-color);
+ }
+
+.link:hover,
+.link:focus {
+    color: rgba(64, 75, 191, 1);
+}
+
+ .contact-inf {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--second-color);
+ }
+ .contact-inf:hover,
+ .contact-inf:focus {
+    color: rgba(64, 75, 191, 1);
+ }
+
+ /* --Main part: First section --- */
+
+ .heder {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    color: white;
+ }
+ .order-but:focus,
+ .order-but:hover {
+    background-color: rgba(64, 75, 191, 1);
+ }
+ .order-but {
+    background-color: var(--acent-color);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+ }
+
+ /* --Main part: Second section-- */
+ .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--main-color);
+ }
+
+ .section-subtitle {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.1;
+        color: var(--main-color);
+ }
+
+ .section-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--second-color);
+ }
+.dark-bk {
+    background-color: var(--main-color);
+}
+ .footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--third-color);
+ }
+
+ .sectio-third{
+    background-color: rgba(244, 244, 253, 1);
+ }
+
+ .logo-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--third-color)
+ }
+ /* Portfolio details */
+
+ .filter {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--acent-color);
+    background-color: rgba(231, 233, 252, 1);
+ }
+ 
+ .filter:hover,
+ .filter:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(64, 75, 191, 1);
+ }
