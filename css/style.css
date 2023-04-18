@@ -43,6 +43,9 @@ body {
 .logo-part {
   color:var(--main-color);
 }
+.logo-part-s{
+  color:#f4f4fd;
+}
 .list {
     list-style: none;
 }
@@ -156,4 +159,8 @@ body {
 .filter:focus {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(64, 75, 191, 1);
+}
+
+.photo-acent{
+  background-color: #FFFFFF;
 }
