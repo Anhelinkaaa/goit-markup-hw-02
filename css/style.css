@@ -3,12 +3,22 @@
   --second-color: rgba(67, 68, 85, 1);
   --third-color: rgba(244, 244, 253, 1);
   --acent-color: rgba(77, 90, 229, 1);
+  --ident--: 24px;
+  --items--: 4;
 }
 
 body {
   font-family:"Roboto",sans-serif;
   color:#434455;
   background-color: white;
+}
+
+
+h1,h2,h3 {
+  margin: 0;
+}
+img {
+  display: block;
 }
 
 /* -- Navigation -- */
@@ -20,6 +30,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  padding: 24px 0;
 }
 
 .link {
@@ -34,20 +45,37 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--acent-color);
+  margin-right: 76px;
 }
 .logo:hover,
 .logo:focus {
   color: rgba(64, 75, 191, 1);
 }
 
-.logo-part {
+.logo-part-top {
   color:var(--main-color);
 }
-.logo-part-s{
+.logo-part-btm{
   color:#f4f4fd;
+}
+.footer {
+margin-top: 100px;
+margin-right: 1020px;
+margin-bottom: 100px;
+margin-left: 156px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  
 }
 .list {
     list-style: none;
+    display: flex;
+    gap: 24px;
+    padding-left: 0;
 }
 .list-items:hover,
 .list-items:focus {
@@ -58,6 +86,16 @@ body {
     font-style: normal;
 }
 
+.nav {
+margin-right: auto;
+}
+
+.addres-list {
+  display: flex;
+  align-items: center;
+  gap:  40px;
+}
+
 .contact-inf {
   font-family: 'Roboto';
   font-style: normal;
@@ -66,6 +104,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--second-color);
+  padding: 24px 0;
 }
 .contact-inf:hover,
 .contact-inf:focus {
@@ -74,30 +113,44 @@ body {
 
 /* --Main part: First section --- */
 
-.heder {
+.main-title {
+  width: 496px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color:#ffffff;
+  margin-top: 188px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  
+
 }
 
-.order-but {
+.main-btn {
+  display: block;
   background-color: #4D5AE5;
   font-family: "Roboto", sans-serif;
   color:#ffffff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.04em
+  letter-spacing: 0.04em;
+  min-width:169;
+  min-height: 56px;
+  padding: 15px 31px;
+  border-radius: 4px;
+  margin: 48px auto 188px auto;
 }
-.order-but:focus,
-.order-but:hover {
+.main-btn:focus,
+.main-btn:hover {
     background-color: #404BBF;
     cursor: pointer;
 }
 
 /* --Main part: Second section-- */
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -106,6 +159,7 @@ body {
   text-transform: capitalize;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  margin-bottom: 72px;
 }
 
 .section-subtitle {
@@ -122,15 +176,21 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color:#434455;
+  margin: 0px;
 }
-.dark-bk {
-  background-color:#2e2f42;
-}
+  
 .footer-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
   color: var(--third-color);
+  width: 264px;
+}
+
+
+
+.dark-bk {
+background-color: #2e2f42;
 }
 
 .sectio-third {
@@ -157,6 +217,14 @@ body {
   cursor: pointer;
   background-color: #F4F4FD;
   cursor: pointer;
+  border-radius: 4px;
+}
+.flter-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .filter:hover,
@@ -169,6 +237,75 @@ body {
   background-color: #FFFFFF;
 }
 
-.logo-part-s {
+.logo-part-btm {
   color: #f4f4fd;
+}
+
+.container
+{
+  width: 1158px; ;
+  outline: 2px solid red;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.heder-container {
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  padding: 120px 0px;
+}
+
+.subtitle-about-us {
+  margin-bottom: 8px;
+}
+
+.text-about-us {
+  width: 264px;
+
+}
+
+.doing-images {
+  gap: 24px;
+}
+
+.doing-title {
+  margin-bottom: 72px;
+  --items--: 3;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card-set-item {
+  flex-basis: calc((100% - 24) / 4);
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.card-list-item {
+  flex-basis: calc((100% - 24) / 4);
+}
+.image-of-hero {
+  margin-bottom: 32px;
+}
+
+.name-of-hero {
+  margin-bottom: 32px;
+}
+
+.subtitle-about-work {
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+.text-about-wirk {
+  margin-bottom: 32px;
 }
